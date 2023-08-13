@@ -5,11 +5,13 @@ public class Algo_5 {
 
     private static final Scanner scanner =new Scanner(System.in);
     public static void main(String[] args) {
-
+do{
         System.out.print("Enter text here: ");
 
+
         String input = scanner.nextLine().strip();
-        
+        if(input=="")System.out.println("Invalid input");
+        else{
         char[] chars = input.toCharArray();
         int i=0;
         char temp ;
@@ -20,7 +22,11 @@ public class Algo_5 {
             i++;
 
         }
-            System.out.println(Arrays.toString(chars));
+         System.out.println(Arrays.toString(chars));
+     }
+     
+     } while(true);   
+
     }
     
 }
